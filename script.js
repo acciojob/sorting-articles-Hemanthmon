@@ -6,10 +6,10 @@ function stripArticle(name) {
 
 const sortedBands = bands.sort((a, b) => stripArticle(a).localeCompare(stripArticle(b)));
 
-const ul = document.getElementById('bands');
+const ul = document.getElementById("bands")
 
 sortedBands.forEach(band => {
-  const li = document.createElement('li');
-  li.textContent = band;
-  ul.appendChild(li);
-});
+	const li = document.createElement('li')
+	li.textContent = band
+	ul.appendChild(li)
+})
